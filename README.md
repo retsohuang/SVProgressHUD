@@ -1,10 +1,11 @@
 # SVProgressHUD
 
-![Pod Version](https://img.shields.io/cocoapods/v/SVProgressHUD.svg?style=flat)
+![Pod Version](https://img.shields.io/badge/pod-2.2.6-0A7CF5.svg?style=flat)
 ![Pod Platform](https://img.shields.io/cocoapods/p/SVProgressHUD.svg?style=flat)
 ![Pod License](https://img.shields.io/cocoapods/l/SVProgressHUD.svg?style=flat)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-green.svg?style=flat)](https://cocoapods.org)
+[![Accio supported](https://img.shields.io/badge/Accio-supported-0A7CF5.svg?style=flat)](https://github.com/JamitLabs/Accio)
 
 `SVProgressHUD` is a clean and easy-to-use HUD meant to display the progress of an ongoing task on iOS and tvOS.
 
@@ -15,6 +16,24 @@
 Try `SVProgressHUD` on [Appetize.io](https://appetize.io/app/p8r2cvy8kq74x7q7tjqf5gyatr).
 
 ## Installation
+
+### [Accio](https://github.com/JamitLabs/Accio)
+Add the following etnry in your Package.swift:
+
+```swift
+.package(url: "https://github.com/retsohuang/SVProgressHUD.git", .upToNextMajor(from: "2.2.6")),
+```
+
+Next, add `SVProgressHUD ` to your App targets dependencies like so:
+
+```swift
+.target(
+  name: "App",
+  dependencies: [
+    "SVProgressHUD",
+  ]
+),
+```
 
 ### From CocoaPods
 
