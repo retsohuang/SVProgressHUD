@@ -3,6 +3,7 @@
 * Remove deprecated Apis
 * Make sharedView public
 * Apply frozen enums
+* Public SVIndefiniteAnimatedView
 
 ## Version 2.2.5
 * Use GitHub official license style
