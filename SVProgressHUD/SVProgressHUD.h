@@ -2,7 +2,7 @@
 //  SVProgressHUD.h
 //  SVProgressHUD, https://github.com/SVProgressHUD/SVProgressHUD
 //
-//  Copyright (c) 2011-2018 Sam Vermette and contributors. All rights reserved.
+//  Copyright (c) 2011-2019 Sam Vermette and contributors. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -17,13 +17,13 @@ extern NSString * _Nonnull const SVProgressHUDDidAppearNotification;
 
 extern NSString * _Nonnull const SVProgressHUDStatusUserInfoKey;
 
-typedef NS_ENUM(NSInteger, SVProgressHUDStyle) {
+typedef NS_CLOSED_ENUM(NSInteger, SVProgressHUDStyle) {
     SVProgressHUDStyleLight NS_SWIFT_NAME(light),        // default style, white HUD with black text, HUD background will be blurred
     SVProgressHUDStyleDark NS_SWIFT_NAME(dark),         // black HUD and white text, HUD background will be blurred
     SVProgressHUDStyleCustom NS_SWIFT_NAME(custom)        // uses the fore- and background color properties
 };
 
-typedef NS_ENUM(NSUInteger, SVProgressHUDMaskType) {
+typedef NS_CLOSED_ENUM(NSUInteger, SVProgressHUDMaskType) {
     SVProgressHUDMaskTypeNone NS_SWIFT_NAME(none) = 1,  // default mask type, allow user interactions while HUD is displayed
     SVProgressHUDMaskTypeClear NS_SWIFT_NAME(clear),     // don't allow user interactions with background objects
     SVProgressHUDMaskTypeBlack NS_SWIFT_NAME(black),     // don't allow user interactions with background objects and dim the UI in the back of the HUD (as seen in iOS 7 and above)
@@ -31,7 +31,7 @@ typedef NS_ENUM(NSUInteger, SVProgressHUDMaskType) {
     SVProgressHUDMaskTypeCustom NS_SWIFT_NAME(custom)     // don't allow user interactions with background objects and dim the UI in the back of the HUD with a custom color
 };
 
-typedef NS_ENUM(NSUInteger, SVProgressHUDAnimationType) {
+typedef NS_CLOSED_ENUM(NSUInteger, SVProgressHUDAnimationType) {
     SVProgressHUDAnimationTypeFlat NS_SWIFT_NAME(flat),     // default animation type, custom flat animation (indefinite animated ring)
     SVProgressHUDAnimationTypeNative NS_SWIFT_NAME(native)   // iOS native UIActivityIndicatorView
 };
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSUInteger, SVProgressHUDAnimationType) {
 typedef void (^SVProgressHUDShowCompletion)(void);
 typedef void (^SVProgressHUDDismissCompletion)(void);
 
-@interface SVProgressHUD : UIView
+@interface SVProgressHUD: UIView
 
 #pragma mark - Customization
 
@@ -142,6 +142,8 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 + (BOOL)isVisible;
 
 + (NSTimeInterval)displayDurationForString:(nullable NSString*)string;
+
++ (nonnull SVProgressHUD *)sharedView;
 
 @end
 

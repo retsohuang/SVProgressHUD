@@ -2,7 +2,7 @@
 //  SVProgressHUD.h
 //  SVProgressHUD, https://github.com/SVProgressHUD/SVProgressHUD
 //
-//  Copyright (c) 2011-2018 Sam Vermette and contributors. All rights reserved.
+//  Copyright (c) 2011-2019 Sam Vermette and contributors. All rights reserved.
 //
 
 #if !__has_feature(objc_arc)
@@ -63,7 +63,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
     BOOL _isInitializing;
 }
 
-+ (SVProgressHUD*)sharedView {
++ (nonnull SVProgressHUD *)sharedView {
     static dispatch_once_t once;
     
     static SVProgressHUD *sharedView;
