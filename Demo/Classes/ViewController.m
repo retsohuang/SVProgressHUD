@@ -23,6 +23,11 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.activityCount = 0;
+
+  [SVProgressHUD sharedView].layer.shadowColor = [[UIColor blackColor] CGColor];
+  [SVProgressHUD sharedView].layer.shadowOffset = CGSizeMake(0, 10);
+  [SVProgressHUD sharedView].layer.shadowOpacity = 0.5;
+  [SVProgressHUD sharedView].layer.shadowRadius = 30;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
