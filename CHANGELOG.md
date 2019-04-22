@@ -1,3 +1,9 @@
+## Version 2.2.6
+* Accio and SwiftPM support
+* Remove deprecated Apis
+* Make sharedView public
+* Apply frozen enums
+
 ## Version 2.2.5
 * Use GitHub official license style
 
