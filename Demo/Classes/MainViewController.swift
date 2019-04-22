@@ -18,7 +18,10 @@ class MainViewController: UIViewController {
       view.layer.shadowOffset = CGSize(width: 0, height: 10)
       view.layer.shadowOpacity = 0.5
       view.layer.shadowRadius = 30
-
+      
+      let animatedView = SVIndefiniteAnimatedView(frame: view.frame)
+      animatedView.strokeThickness = 2
+      animatedView.radius = 30
         // Do any additional setup after loading the view.
     }
     
