@@ -36,7 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C8596B2EAAAE945F0799692206BE7F0 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SVProgressHUD.framework; path = Dependencies/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,14 +120,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		299F92048ABD3FFC9605ED221E23578A /* iOS Demo */ = {
-			isa = PBXGroup;
-			children = (
-				1C8596B2EAAAE945F0799692206BE7F0 /* SVProgressHUD.framework */,
-			);
-			name = "iOS Demo";
-			sourceTree = "<group>";
-		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +129,6 @@
 				D36EDBCF1BE7E9B000BD0EF1 /* tvOS Demo */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				3E50B52D438F64412BFF43D33E78F2CD /* Dependencies */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -163,14 +153,6 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3E50B52D438F64412BFF43D33E78F2CD /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				299F92048ABD3FFC9605ED221E23578A /* iOS Demo */,
-			);
-			name = Dependencies;
 			sourceTree = "<group>";
 		};
 		63ADC4B81364C1360060E45B /* SVProgressHUD */ = {
