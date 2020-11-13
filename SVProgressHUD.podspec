@@ -1,8 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'SVProgressHUD'
   s.version  = '2.2.6'
-  s.ios.deployment_target = '8.0'
-  s.tvos.deployment_target = '9.0'
   s.license  =  { :type => 'MIT', :file => 'LICENSE' }
   s.summary  = 'A clean and lightweight progress HUD for your iOS and tvOS app.'
   s.homepage = 'https://github.com/SVProgressHUD/SVProgressHUD'
@@ -15,4 +13,6 @@ Pod::Spec.new do |s|
   s.framework    = 'QuartzCore'
   s.resources    = 'SVProgressHUD/SVProgressHUD.bundle'
   s.requires_arc = true
+  s.ios.deployment_target = '9.0'
+  s.tvos.deployment_target = '9.0'
 end
